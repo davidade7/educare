@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+header {
+  background-color: #F9E0AE;
+  width: 100%;
+  height: 124px;
+  .container {
+    max-width: 1280px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    .logo {
+      margin-left: 119px;
+      span {
+        font-family: 'Jim Nightshade';
+        font-size: 2.5rem;
+      }
+    }
+    .list-menu{
+      display: flex;
+      font-family: Poppins;
+      font-size: 1.25rem;
+      margin-right: 100px;
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 59px;
+        li {
+          span {
+            font-weight: 600;
+          }
+          img {
+            margin-left: 14px;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      button {
+        background-color: #C24914;
+        border: 0;
+        border-radius: 10px;
+        padding: 5px 19px;
+        margin-left: 45px;
+        span {
+          color: #fff;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
