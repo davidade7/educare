@@ -8,6 +8,7 @@
 body {
   max-width: 100vw;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -30,7 +31,6 @@ header {
     }
     .list-menu{
       display: flex;
-      font-family: Poppins;
       font-size: 1.25rem;
       margin-right: 100px;
       ul {
@@ -53,17 +53,59 @@ header {
         background-color: #C24914;
         border: 0;
         border-radius: 10px;
-        padding: 5px 19px;
+        padding: 8px 20px;
         margin-left: 45px;
-        span {
-          color: #fff;
-          font-size: 1.25rem;
-          font-weight: 700;
-        }
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 700;
         &:hover {
           cursor: pointer;
         }
       }
     }
+  }
+}
+main {
+  max-width: 1280px;
+  margin: auto;
+  section{
+    border: solid 1px black;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    .left-space {
+      margin-left: 100px;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 34px;
+    }
+    p {
+      color: rgba(0, 0, 0, 0.46);
+      font-size: 1.25rem;
+      margin-bottom: 34px;
+    }
+    .btn-brown {
+      background-color: #682C0E;
+      border: 0;
+      padding: 8px 20px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    ul {
+      padding: 1.5rem;
+      li {
+        font-size: 1.5rem;
+      }
+      :not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .double {
+    display: flex;
   }
 }
